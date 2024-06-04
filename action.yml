@@ -1,23 +1,21 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-
-# Add your action's branding here. This will appear on the GitHub Marketplace.
-branding:
-  icon: 'heart'
-  color: 'red'
+name: Is File Changed in commit
+description: Check if a file is changed in the commits and return a response
+author: Beez Innovation Labs
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  pattern:
     required: true
-    default: '1000'
+    description: JavaScript regular expression matching filenames (including path) of files which must be checked
+  token:
+    required: true
+    description: Token to access the repository
+    default: ${{ github.token }}
 
 # Define your outputs here.
 outputs:
-  time:
-    description: 'Your output description here'
+  changed:
+    description: A true/false output whether the check passes or not
 
 runs:
   using: node20

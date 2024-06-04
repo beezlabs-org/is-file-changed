@@ -1,16 +1,16 @@
 {
-  "name": "typescript-action",
-  "description": "GitHub Actions TypeScript template",
-  "version": "0.0.0",
-  "author": "",
+  "name": "is-file-changed",
+  "description": "Check if a file is changed in the commits and return a response",
+  "version": "1.0.0",
+  "author": "Sayak Mukhopadhyay <sayak@beezlabs.com>",
   "private": true,
-  "homepage": "https://github.com/actions/typescript-action",
+  "homepage": "https://github.com/beezlabs-org/is-file-changed",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/beezlabs-org/is-file-changed.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/typescript-action/issues"
+    "url": "https://github.com/beezlabs-org/is-file-changed/issues"
   },
   "keywords": [
     "actions",
@@ -35,7 +35,6 @@
     "test": "npx jest",
     "all": "npm run format:write && npm run lint && npm run test && npm run coverage && npm run package"
   },
-  "license": "MIT",
   "jest": {
     "preset": "ts-jest",
     "verbose": true,
